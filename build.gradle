@@ -30,8 +30,10 @@ project(':macros') {
     }
 
     dependencies {
-        scalaCompiler "org.scalamacros:paradise_2.11.8:2.1.0"
-        compile group: 'org.scala-lang', name: 'scala-reflect', version: '2.11.8'
+        scalaCompiler "org.scalameta:paradise_2.11.8:3.0.0-beta4"
+        // https://mvnrepository.com/artifact/org.scalameta/scalameta_2.11
+        compile group: 'org.scalameta', name: 'scalameta_2.11', version: '1.4.0'
+
     }
 
     tasks.withType(ScalaCompile) {

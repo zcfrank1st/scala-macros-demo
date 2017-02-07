@@ -1,9 +1,9 @@
+import com.chaos.m.main
+
 /**
   * Created by zcfrank1st on 04/02/2017.
   */
+@main
 object Main {
-  def main(args: Array[String]): Unit = {
-    import com.chaos.m._
-    Macros.printf("", "")
-  }
+  println("hello world")
 }
